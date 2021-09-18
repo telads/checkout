@@ -1,5 +1,7 @@
 class Supermarket 
     def checkout(goods)
-        -1
+        if goods != (/[^a-zA-Z]/)
+            -1
+        end
     end
 end
