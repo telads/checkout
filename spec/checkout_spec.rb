@@ -6,4 +6,9 @@ describe 'Supermarket Checkout' do
     expect(supermarket.checkout('aBc')).to eq -1
     end
 
+    it "throws an error for '-B8x'" do
+        supermarket = Supermarket.new
+        expect(supermarket.checkout('-B8x')).to eq -1
+    end
+    
 end
