@@ -20,5 +20,10 @@ describe 'Supermarket Checkout' do
         supermarket = Supermarket.new
         expect(supermarket.checkout("AA")).to eq 100
     end
+
+    it "ABCD = 115 " do
+        supermarket = Supermarket.new
+        expect(supermarket.checkout("ABCD")).to eq 115
+    end
     
 end
